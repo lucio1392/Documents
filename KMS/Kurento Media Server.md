@@ -68,11 +68,11 @@
 **We will going to install the demo sample from Kurento offical homepage to testing our server. Please following below instruction:**
 
   1. Run these commands:
-    >git clone https://github.com/Kurento/kurento-tutorial-java.git <br>
+  
+    git clone https://github.com/Kurento/kurento-tutorial-java.git
     cd kurento-tutorial-java/kurento-hello-world
-    <br>
-    git checkout 6.6.x<br>
-    mvn clean compile exec:java -Dkms.url=ws://localhost:8888/kurento***
+    git checkout 6.6.x
+    mvn clean compile exec:java -Dkms.url=ws://localhost:8888/kurento
 
 2. Open the demo page with a WebRTC-compliant browser (Chrome, Firefox): https://localhost:8443/
 
