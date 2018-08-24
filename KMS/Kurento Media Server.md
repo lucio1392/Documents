@@ -12,8 +12,8 @@
 
 ###### Below is step by step how to setup Ubuntu environment on Mac os.
   * ###### Tool:
-    * `Virtual Box` - **https://www.virtualbox.org/wiki/Downloads** .
-    * `Ubuntu Desktop` - KMS now support on Ubuntu 14.04 LTS or 16.04 LTS version in this noted I will use Ubuntu 16.04 LTS for setup - ** http://releases.ubuntu.com/16.04/?_ga=2.247006157.858839509.1535041252-1995323647.1535041252 (64-bit PC (AMD64) desktop image)**
+    * [**`Virtual Box`**](https://www.virtualbox.org/wiki/Downloads)
+    * [**`Ubuntu Desktop - KMS now support on Ubuntu 14.04 LTS or 16.04 LTS version in this noted I will use Ubuntu 16.04 LTS for setup - (64-bit PC (AMD64) desktop image)`**](http://releases.ubuntu.com/16.04/?_ga=2.247006157.858839509.1535041252-1995323647.1535041252) 
 
   * ###### Steps:
     1. Install `Virtual Box`.
@@ -29,7 +29,7 @@
 
   1. ```echo "deb http://ubuntu.kurento.org xenial kms6" | sudo tee /etc/apt/sources.list.d/kurento.list```
 
-    *This command will create a new file `kurento.list` in `/etc/apt/sources.list.d` with the dependence of KSM `deb http://ubuntu.kurento.org xenial kms6`*
+ *This command will create a new file `kurento.list` in `/etc/apt/sources.list.d` with the dependence of KSM `deb http://ubuntu.kurento.org xenial kms6`*
 
    2. ```wget -0 - http://ubuntu.kurento.org/kurento.gpg.key | sudo apt-key add -```
 
@@ -47,21 +47,21 @@
 ###### Tip: You can you `SSH` to control your Ubuntu over your MacOS's terminal.
 
   * ###### Checking installation:
-    1. ** To verify that KMS is up and running, use this command and look for the `kurento-media-server` process run:**
+  1. **To verify that KMS is up and running, use this command and look for the `kurento-media-server` process run:**
 
       `ps -ef | grep kurento-media-server`
 
-      **The result should be:**
+        **The result should be:**
 
-      `> yourname  1270  1  0 08:52 ?  00:01:00  /usr/bin/kurento-media-server`
+       `> yourname  1270  1  0 08:52 ?  00:01:00  /usr/bin/kurento-media-server`
 
-    2. **Checking websocket:**
+   2. **Checking websocket:**
 
-      `sudo netstat -tupan | grep kurento`  
+        `sudo netstat -tupan | grep kurento`  
 
-      **The result should be:**
+         **The result should be:**
 
-      `> tcp6  0  0 :::8888  :::*  LISTEN  1270/kurento-media-server`
+         `> tcp6  0  0 :::8888  :::*  LISTEN  1270/kurento-media-server`
 
 #### III. **Running Demo for testing purpose.**
 
