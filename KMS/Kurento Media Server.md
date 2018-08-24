@@ -1,27 +1,27 @@
 ## <center> 💻 **Kurento Media Server Documents**  💻 </center>
 
-#### I. ** Setup Ubuntu environment on MacOS. **
-#### II. ** Setup Kurento Media Server on Ubuntu. **
-#### III. ** Running Demo for testing purpose. **
+#### I. **Setup Ubuntu environment on MacOS.**
+#### II. **Setup Kurento Media Server on Ubuntu.**
+#### III. **Running Demo for testing purpose.**
 
 ****
 
 #### Noted: `KMS` is short for Kurento Media Server.
 
-#### I. ** Setup Ubuntu environment on MacOS: **
+#### I. **Setup Ubuntu environment on MacOS:**
 
 ###### Below is step by step how to setup Ubuntu environment on Mac os.
   * ###### Tool:
-    * `Virtual Box` - ** https://www.virtualbox.org/wiki/Downloads ** .
+    * `Virtual Box` - **https://www.virtualbox.org/wiki/Downloads** .
     * `Ubuntu Desktop` - KMS now support on Ubuntu 14.04 LTS or 16.04 LTS version in this noted I will use Ubuntu 16.04 LTS for setup - ** http://releases.ubuntu.com/16.04/?_ga=2.247006157.858839509.1535041252-1995323647.1535041252 (64-bit PC (AMD64) desktop image)**
 
   * ###### Steps:
     1. Install `Virtual Box`.
     2. Install `Ubuntu Desktop` using `Virtual Box`.
 
-      ** All install settings using default options. **
+      **All install settings using default options.**
 
-#### II. ** Setup Kurento Media Server on Ubuntu: **
+#### II. **Setup Kurento Media Server on Ubuntu:**
 
 ###### Below is step by step how to setup KSM on Ubuntu.
 
@@ -37,11 +37,11 @@
    4. ```sudo apt-get install kurento-media-server-6.0```
 
 
-** After KSM finish install we can going to `Start` the server using following command: ** <br>
+**After KSM finish install we can going to `Start` the server using following command:** <br>
 `sudo service kurento-media-server-6.0 start`.
 
 
-** To `Stop` KSM you can use: ** <br>
+**To `Stop` KSM you can use:** <br>
 `sudo service kurento-media-server-6.0 stop`.
 
 ###### Tip: You can you `SSH` to control your Ubuntu over your MacOS's terminal.
@@ -55,7 +55,7 @@
 
       `> yourname  1270  1  0 08:52 ?  00:01:00  /usr/bin/kurento-media-server`
 
-    2. ** Checking websocket:**
+    2. **Checking websocket:**
 
       `sudo netstat -tupan | grep kurento`  
 
@@ -63,7 +63,7 @@
 
       `> tcp6  0  0 :::8888  :::*  LISTEN  1270/kurento-media-server`
 
-#### III. ** Running Demo for testing purpose. **
+#### III. **Running Demo for testing purpose.**
 
 **We will going to install the demo sample from Kurento offical homepage to testing our server. Please following below instruction:**
 
